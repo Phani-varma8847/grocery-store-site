@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grocery Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🥦 Fresh Grocery</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Cart 🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+      <div class="product-card">
+        <h3>🍎 Apple</h3>
+        <p>₹30/kg</p>
+        <button onclick="addToCart('Apple', 30)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <h3>🥔 Potato</h3>
+        <p>₹20/kg</p>
+        <button onclick="addToCart('Potato', 20)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <h3>🥛 Milk</h3>
+        <p>₹50/litre</p>
+        <button onclick="addToCart('Milk', 50)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <h3>🍚 Rice</h3>
+        <p>₹40/kg</p>
+        <button onclick="addToCart('Rice', 40)">Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>🛒 Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total:</strong> ₹<span id="total">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fresh Grocery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
